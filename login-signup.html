@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Edu<span class="mart">Mart</span></a>
+        <nav>
+            <a href="index.html#inicio">Inicio</a>
+            <a href="comprar">Comprar</a>
+            <a href="vender">Vender</a>
+            <a href="index.html#Nosotros">Sobre Nosotros</a>
+            <a href="index.html#Review">Reseñas</a>
+
+        </nav>
+        <div class="iconos">
+            <a href="#"><img src="img/iconos/heart.svg" alt=""></a>
+            <a href="#"><img src="img/iconos/cart.svg" alt=""></a>
+            <a href="./login-signup.html"><img src="img/iconos/usuario.svg" alt=""></a>
+        </div>
+    </header>
+    <main class="login-signup">
+        <h1>Edu<span>Mart</span></h1>
+        <div class="wrapper">
+            <div class="logInBox">
+                <h2>Iniciar sesión</h2>
+                <form>
+                    <div class="logInInput">
+                        <label>Nombre de usuario <br></label>
+                        <span class="icon"><img src="img/iconos/usuario.svg"></span>
+                        <input type="text" required class="user">
+                    </div>
+                    <div class="logInInput">
+                        <label>Contraseña <br></label>
+                        <span class="icon"><img src="img/iconos/lock.svg"></span>
+                        <input type="password" required id="contraseña">
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Recordarme</label>
+                        <p><a href="#">Olvidé mi contraseña</a></p>
+                    </div>
+                    <button type="button" class="loginBtn" id="Loginbtn" onclick="location.href='index.html'">Iniciar
+                        sesión</button>
+                    <div class="login-register">
+                        <p>No tienes una cuenta? </p>
+                        <p class="signUpLink">Registrate ahora</p>
+                    </div>
+                </form>
+            </div>
+            <div class="signUpBox">
+                <h2>Registrate</h2>
+                <form>
+                    <div class="logInInput">
+                        <label>Nombre de usuario <br></label>
+                        <span class="icon"><img src="img/iconos/usuario.svg"></span>
+                        <input type="text" required class="user">
+                    </div>
+                    <div class="logInInput">
+                        <label>Email <br></label>
+                        <span class="icon"><img src="img/iconos/mail.svg"></span>
+                        <input type="email" required>
+                    </div>
+                    <div class="logInInput">
+                        <label>Contraseña <br></label>
+                        <span class="icon"><img src="img/iconos/lock.svg"></span>
+                        <input type="password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Acepto los terminos y condiciones</label>
+                    </div>
+                    <button type="button" class="registerBtn" id="registerBtn"
+                        onclick="location.href='index.html'">Registrate</button>
+                    <div class="login-register">
+                        <p>Ya tienes una cuenta? </p>
+                        <p class="loginLink">Iniciar sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="creditos">
+            <p>Copyright &copy; 2024 EduMart. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="login-signupWrapper.js"></script>
+</body>
+
+</html>
