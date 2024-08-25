@@ -202,7 +202,6 @@ section {
 
 .LosMasVendidos a {
     margin-top: 3vh;
-    border-radius: 10px;
 }
 
 /* Fin los más vendidos */
@@ -264,14 +263,6 @@ section {
     transform: translateY(-50%);
     cursor: pointer;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
-}
-
-.btn-izq {
-    left: .5rem;
-}
-
-.btn-der {
-    right: .5rem;
 }
 
 /* Fin categorías */
@@ -337,3 +328,103 @@ section {
     color: #fff !important;
     font-weight: 600;
 }
+
+
+/* Post Review */
+.reviewPost {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.reviewPost .post {
+    display: none;
+}
+
+.reviewPost .text {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.reviewPost .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.x {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviewPost .contenedorEstrellas input {
+    display: none;
+}
+
+.contenedorEstrellas {
+    max-height: 40px;
+    max-width: 70%;
+    margin-bottom: 10%;
+}
+
+.contenedorEstrellas label {
+    width: 40px;
+    transition: all 0.2s ease;
+    float: right;
+
+}
+
+label svg {
+    width: 40px;
+    height: 40px;
+
+}
+
+input:not(:checked)~label:hover svg,
+input:not(:checked)~label:hover~label svg {
+    fill: #6DB8C1;
+}
+
+input:checked~label svg {
+    fill: #6DB8C1;
+}
+
+form .textarea {
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #f1f1f1;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+
+.postButton {
+    margin-top: 5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Post review */
