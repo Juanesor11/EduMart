@@ -64,8 +64,12 @@ header a:hover:not(.logo) {
     color: var(--clr-accent) !important;
 }
 
-header .iconos a img {
+header .iconos a svg {
     width: 1.3rem;
+}
+
+.iconos a svg:hover {
+    fill: var(--clr-accent);
 }
 
 header .iconos a {
@@ -207,62 +211,46 @@ section {
 /* Fin los más vendidos */
 
 /* Inicio categorías */
-.categorias {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenedor {
-    width: 100vw;
-    padding: 1rem;
-    padding-left: 4%;
-}
-
-.contenedor h2 {
+.categorias h2 {
+    padding-top: 5%;
     margin-bottom: 1rem;
+    margin-left: 4%;
 }
 
-.carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100;
-    height: 10vh;
-    background: linear-gradient(90deg, var(--clr-accent), var(--clr-accent-sec)) !important;
-    border-radius: 10px;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);
-    padding: 3% 0;
-}
-
-.carousel-contenido {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Owl Carousel */
+.owl-nav span {
+    font-size: 75px;
     position: absolute;
-    width: calc(100% - 150px);
-
+    transform: translateY(-200%);
 }
 
-.carousel-contenido .cat {
-    width: 15vw;
-    margin-right: 1rem;
-    padding: 1.2rem;
-    background: #ffff;
-    border-radius: 10px;
-    box-shadow: 1 3px 5px rgba(0, 0, 0, 0.1);
+.owl-prev {
+    margin-left: 5%;
 }
 
-.btn-izq,
-.btn-der {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+.owl-next {
+    transform: translateX(90vw);
+}
+
+.owl-stage-outer {
+    max-width: 80vw;
+    margin-left: 10vw;
+}
+
+#categorias .cat {
+    border: 1px solid;
+    width: fit-content;
+    padding: 1%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#categorias div img {
+    height: 250px;
+}
+
+#categorias div p {
+    text-align: center;
 }
 
 /* Fin categorías */
