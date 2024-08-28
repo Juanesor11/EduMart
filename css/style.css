@@ -140,14 +140,6 @@ section {
 
 /* fin botones */
 
-.footer {
-    bottom: 0;
-}
-
-.creditos p {
-    font-style: italic;
-}
-
 /* Inicio section los mas vendidos */
 .LosMasVendidos {
     text-align: center;
@@ -325,7 +317,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 20px 30px;
     border: 1px solid black;
     border-radius: 5px;
@@ -416,3 +408,44 @@ form .textarea textarea {
 }
 
 /* Post review */
+
+.footer {
+    bottom: 0;
+}
+
+.creditos p {
+    font-style: italic;
+    padding: 2% 0;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+#footer .col:not(:first-of-type) {
+    border-left: 1px solid lightgray;
+}
+
+.useful-links ul {
+    list-style: none;
+}
+
+.useful-links li {
+    padding: 5% 0;
+}
+
+.redes div svg {
+    height: 40px;
+}
+
+.vender,
+.comprar,
+.carrito {
+    padding-top: 178px;
+    height: 100vh;
+}
+
+.vender h1,
+.comprar h1,
+.carrito h1 {
+    font-size: 120px;
+    text-align: center;
+}
