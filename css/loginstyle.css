@@ -53,7 +53,6 @@
 
 .remember-forgot {
     color: black !important;
-    margin: -10px 0 10px;
     align-items: center;
     text-align: center;
 }
@@ -64,7 +63,7 @@
 }
 
 .remember-forgot p a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .loginBtn,
@@ -72,7 +71,6 @@
     display: flex;
     border-radius: 40px;
     margin: auto;
-    margin-bottom: 5px;
     background: black;
     color: #fff !important;
     padding: 10px 15px;
@@ -98,10 +96,13 @@
 
 .signUpLink:hover,
 .loginLink:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
-.icon img {
-    margin-top: 5px;
-    width: 15px;
+.logInInput svg {
+    width: 20px;
+}
+
+.form-floating {
+    height: 50px;
 }
