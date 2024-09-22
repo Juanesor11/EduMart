@@ -23,7 +23,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 110px;
+    scroll-padding: 85px;
 }
 
 body {
@@ -49,6 +49,11 @@ header {
 header .logo {
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.logo img {
+    height: 1.3em;
+    margin-right: 10px;
 }
 
 .mart {
@@ -92,8 +97,7 @@ section {
     align-items: center;
     min-height: 100vh;
     padding: 2% 5%;
-    background: url(FOTO!!) no-repeat;
-    /* AGREGAR FOTO DE FONDO */
+    background: url("../img/hero.png") no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 99;
@@ -141,6 +145,15 @@ section {
 /* fin botones */
 
 /* Inicio section los mas vendidos */
+.blank-space {
+    height: 85px;
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0) 0%, var(--clr-accent) 100%);
+}
+
+.blank-space img {
+    width: 100%;
+}
+
 .LosMasVendidos {
     text-align: center;
 }
@@ -173,11 +186,11 @@ section {
 .LosMasVendidos .content .item {
     max-width: 15vw;
     border-radius: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 .LosMasVendidos .content .item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transform: scale(1.05);
 }
 
 .LosMasVendidos .content .item img {
@@ -203,6 +216,11 @@ section {
 /* Fin los más vendidos */
 
 /* Inicio categorías */
+
+.categorias {
+    height: 85vh;
+}
+
 .categorias h2 {
     padding-top: 5%;
     margin-bottom: 1rem;
@@ -213,7 +231,7 @@ section {
 .owl-nav span {
     font-size: 75px;
     position: absolute;
-    transform: translateY(-200%);
+    transform: translateY(-225%);
 }
 
 .owl-prev {
@@ -224,17 +242,20 @@ section {
     transform: translateX(90vw);
 }
 
+.owl-stage {
+    height: 50vh;
+}
+
 .owl-stage-outer {
     max-width: 80vw;
     margin-left: 10vw;
 }
 
 #categorias .cat {
-    border: 1px solid;
     width: fit-content;
     padding: 1%;
-    background-color: #fff;
     border-radius: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
 #categorias div img {
@@ -250,7 +271,6 @@ section {
 /* Inicio Sobre Nosotros */
 
 .Nosotros .title {
-    margin-top: 1%;
     text-align: justify;
     padding: .5em 2em;
 }
@@ -263,15 +283,16 @@ section {
 
 .columnas h3 {
     font-size: 28px;
-    color: var(--clr-accent-sec) !important;
-    -webkit-text-stroke: 1px var(--clr-accent) !important;
+    color: var(--clr-accent) !important;
+    font-weight: 600;
 }
 
 .columnas div {
     flex-basis: 100%;
     height: 50vh;
     border-radius: 5px;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, .7);
 }
 
 .columnas div>* {
@@ -280,14 +301,23 @@ section {
     text-align: center;
 }
 
+.columnas ul {
+    padding-left: 0;
+}
+
 .columnas li {
     font-size: 24px;
-    line-height: 2ch;
+    line-height: 2.5ch;
 }
 
 /* Reseñas */
+.Review {
+    height: 90vh;
+}
+
 .Review h2 {
     margin-left: 4%;
+    margin-top: 5%;
 }
 
 .reviewUser {
@@ -409,7 +439,7 @@ form .textarea textarea {
 
 /* Post review */
 
-.footer {
+footer {
     bottom: 0;
 }
 
