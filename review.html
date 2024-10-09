@@ -6,28 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduMart</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EduMart</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 </head>
 
 <body>
     <header>
         <a href="#" class="logo"><img src="img/logo.png" alt="">Edu<span class="mart">Mart</span></a>
         <nav>
-            <a href="#inicio">Home</a>
+            <a href="index.html#inicio">Home</a>
             <a href="comprar.html">Buy</a>
             <a href="vender.html">Sell</a>
-            <a href="#Nosotros">About Us</a>
+            <a href="index.html#Nosotros">About Us</a>
             <a href="review.html">Reviews</a>
         </nav>
         <div class="iconos">
@@ -50,175 +48,21 @@
                 </svg></a>
         </div>
     </header>
-    <main>
 
-        <!-- wishlist -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">My wishlist</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                There is nothing in your wishlist yet!
-            </div>
-        </div>
-        <!-- Fin wishlist -->
-
-        <section class="inicio" id="inicio">
-            <div class="contenido">
-                <h3>Booklets<br>Uniforms</h3>
-                <h5>Used and Refurbished</h5>
-                <p>Buy and sell your used notebooks. Help the environment and make room for new things.</p>
-                <p>Renew your school wardrobe in a sustainable way: buy and sell used uniforms! Give your clothes a
-                    second chance.</p>
-                <a href="comprar.html" class="btn">Buy Now</a>
-            </div>
-        </section>
-        <div class="blank-space">
-            <img src="img/hero-link.png" alt="">
-        </div>
-        <section class="LosMasVendidos">
-            <div class="titulo">
-                <h1>Best sellers</h1>
-                <span>&ndash;</span>
-            </div>
-            <div class="content">
-                <div class="item">
-                    <a href="#"><img src="img/productos/vince.jpg"></a>
-                    <h1>Language Practice for Advanced</h1>
-                    <h2>$40.000</h2>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="img/productos/insight.webp"></a>
-                    <h1>Insight Intermediate</h1>
-                    <h2>$30.000</h2>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="img/productos/portugues-na-escola.webp"></a>
-                    <h1>Portugues Na Escola 2 </h1>
-                    <h2>$10.000</h2>
-                </div>
-                <div class="item">
-                    <a href="#"><img src="img/productos/the-catcher-in-the-rye.webp"></a>
-                    <h1>The Catcher In The Rye</h1>
-                    <h2>$10.000</h2>
-                </div>
-            </div>
-            <a href="comprar.html" class="btn">See all products</a>
-        </section>
-        <section class="categorias">
-            <h2>Categories</h2>
-            <div id="categorias" class="owl-carousel">
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/1año.jpg" alt="">
-                        <p>1st year</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/2año.jpg" alt="">
-                        <p>2nd year</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/3año.jpg" alt="">
-                        <p>3rd year</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/4año.jpg" alt="">
-                        <p>4th year</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/5año.jpg" alt="">
-                        <p>5th year</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/cuadernillos.jpg" alt="">
-                        <p>Booklets</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/uniformes.jpg" alt="">
-                        <p>Uniforms</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/clases.jpg" alt="">
-                        <p>Tutorships</p>
-                    </a>
-                </div>
-                <div class="cat">
-                    <a href="#">
-                        <img src="img/categorias/apuntes.jpg" alt="">
-                        <p>Notes</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="Nosotros" class="Nosotros">
-            <div class="title">
-                <h1>About Edu<span class="mart">Mart</span></h1>
-                <p>We are a group of students passionate about making school more affordable and
-                    sustainable. We noticed that several of our peers were having difficulty purchasing expensive
-                    workbooks and some of their uniforms, so we built a marketplace specifically for our school
-                    community. Thanks to EduMart, students can buy and sell used workbooks and uniforms, as
-                    well as find and offer tutoring at reasonable prices, reducing paper waste through
-                    recycling and allowing students in need to earn extra money.</p>
-            </div>
-            <div class="columnas">
-                <div class="titulo">
-                    <img src="" alt="">
-                    <h3>Mission</h3>
-                    <p>Our mission is to enable students to have the required materials for classes at a more affordable
-                        price and in a sustainable way. In addition, we want students to have better grades in school.
-                    </p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Vision</h3>
-                    <p>Our goal is to be recognized at school. We want our service to be useful, standing out and
-                        marking a before and after in the school's book distribution system and fostering a sense of
-                        community.</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <h3>Values</h3>
-                    <ul>
-                        <li>Accessibility</li>
-                        <li>Trust</li>
-                        <li>Security</li>
-                        <li>Sustainability</li>
-                        <li>Community</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="Review" class="Review">
-            <h2 class="mb-4">What our clients think of us</h2>
+    <main> 
+        <section class="review Review">
+            <h2 class="mb-4">Reviews</h2>
             <div class="container text-center">
                 <div class="row">
                     <div class="col">
                         <div class="card">
                             <div class="card-header">
-                                Ema Ibañez Ocampo
+                                Emilia Manzano
                             </div>
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
                                     <img class="reviewUser" src="img/iconos/reviewUser.svg">
-                                    <p class="reviewText">I have bought used textbooks at EduMart in
-                                        very good condition and at an incredible price. This is why I recommend
-                                        EduMart to all students who want to save money and contribute to
-                                        caring for the environment.
+                                    <p class="reviewText">I have recently bought the book "The Catcher in the Rye" from EduMart. It was really convenient since I had a low budget. Though the book was not in its best condition, it met my expectations and desires.
                                     </p>
                                     <div class="reviewStar">
                                         <img src="img/iconos/estrella.svg">
@@ -234,15 +78,12 @@
                     <div class="col">
                         <div class="card">
                             <div class="card-header">
-                                Federico Gutiérrez
+                                Omar Lamar
                             </div>
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
                                     <img class="reviewUser" src="img/iconos/reviewUser.svg">
-                                    <p class="reviewText">EduMart is just what the school needed. It is great for
-                                        exchanging books and uniforms between students and very simple to use. The
-                                        prices are affordable and the student community really benefits from this
-                                        project.
+                                    <p class="reviewText"> Last week I acquired "Straight to Advanced" from EduMart since my teacher asked me to buy it. Its quality is almost excellent and I found some notes written by the previous student, which is really helpful.
                                     </p>
                                     <div class="reviewStar">
                                         <img src="img/iconos/estrella.svg">
@@ -258,15 +99,13 @@
                     <div class="col">
                         <div class="card">
                             <div class="card-header">
-                                Juana Perrupato
+                                Marianela Pickyme
                             </div>
                             <div class="card-body">
                                 <blockquote class="blockquote mb-0">
-                                    <img class="reviewUser" src="img/iconos/reviewUser.svg">
-                                    <p class="reviewText">Since I discovered EduMart, I no longer worry about spending
-                                        so much money on new books. I found everything I needed and the purchasing
-                                        process was simple and secure. I love being able to sell my books at the end of
-                                        the year.</p>
+                                    <img class="reviewUser" src="img/iconos/reviewUser.svg" >
+                                    <p class="reviewText"> Someone from 3rd year posted the textbook "Portugues na escola 2" and I bought it, he was really sweet when I texted him asking for the booklet and he explained me some Portuguese vocabulary. Nice quality.
+                                    </p>
                                     <div class="reviewStar">
                                         <img src="img/iconos/estrella.svg">
                                         <img src="img/iconos/estrella.svg">
@@ -354,8 +193,8 @@
             </div>
             <!-- Fin post review -->
         </section>
-
     </main>
+
     <footer>
         <div class="creditos">
             <p>Copyright &copy; 2024 EduMart. All rights reserved.</p>
@@ -364,11 +203,9 @@
             <div class="container text-center">
                 <div class="row" id="footer">
                     <div class="col">
-                        <div class="col">
-                            <img src="img/logo.png" alt="" width="40%">
-                            <h1>EduMart&reg;</h1>
-                            <p>Make room for the new</p>
-                        </div>
+                        <img src="img/logo.png" alt="" width="40%">
+                        <h1>EduMart&reg;</h1>
+                        <p>Make room for the new</p>
                     </div>
                     <div class="col">
                         <div class="useful-links">
@@ -408,31 +245,7 @@
                 </div>
             </div>
         </div>
-
-
-
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="postReview.js"></script>
-
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#categorias').owlCarousel({
-                loop: true,
-                nav: true,
-            });
-        });
-    </script>
 </body>
 
 </html>

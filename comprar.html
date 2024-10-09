@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EduMart</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="test.css">
 
     <head>
         <meta charset="UTF-8">
@@ -19,13 +21,13 @@
 
 <body>
     <header>
-        <a href="#" class="logo">Edu<span class="mart">Mart</span></a>
+        <a href="#" class="logo"><img src="img/logo.png" alt="">Edu<span class="mart">Mart</span></a>
         <nav>
             <a href="index.html#inicio">Home</a>
             <a href="comprar.html">Buy</a>
             <a href="vender.html">Sell</a>
             <a href="index.html#Nosotros">About Us</a>
-            <a href="index.html#Review">Reviews</a>
+            <a href="review.html">Reviews</a>
         </nav>
         <div class="iconos">
             <a class="btn-primary" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button"
@@ -49,10 +51,110 @@
     </header>
 
     <main class="comprar">
-        <h1>OPTION NOT AVAILABLE YET</h1>
+        <div class="search-bar">
+            <nav class="bg-body-tertiary search">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success search-btn" type="submit"><img src="img/iconos/mg.svg"
+                                alt=""></button>
+                        <div class="dropdown">
+                            <button class="btn filter-btn" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="img/iconos/filter.svg" alt="">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <h5>Filter</h5>
+                                <li><a class="dropdown-item" href="#">1st year</a></li>
+                                <li><a class="dropdown-item" href="#">2nd year</a></li>
+                                <li><a class="dropdown-item" href="#">3rd year</a></li>
+                                <li><a class="dropdown-item" href="#">4th year</a></li>
+                                <li><a class="dropdown-item" href="#">5th year</a></li>
+                                <li><a class="dropdown-item" href="#">Booklets</a></li>
+                                <li><a class="dropdown-item" href="#">Uniforms</a></li>
+                                <li><a class="dropdown-item" href="#">Tutorships</a></li>
+                                <li><a class="dropdown-item" href="#">Notes</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="products">
+            <div class="fila a">
+                <div class="item">
+                    <a href="#"><img src="img/productos/vince.jpg"></a>
+                    <h1>Language Practice for Advanced</h1>
+                    <h2>$40.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/insight.webp"></a>
+                    <h1>Insight Intermediate</h1>
+                    <h2>$30.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/portugues-na-escola.webp"></a>
+                    <h1>Portugues Na Escola 2 </h1>
+                    <h2>$10.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/the-catcher-in-the-rye.webp"></a>
+                    <h1>The Catcher In The Rye</h1>
+                    <h2>$10.000</h2>
+                </div>
+            </div>
+
+            <div class="fila b">
+                <div class="item">
+                    <a href="#"><img src="img/productos/vince.jpg"></a>
+                    <h1>Language Practice for Advanced</h1>
+                    <h2>$40.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/insight.webp"></a>
+                    <h1>Insight Intermediate</h1>
+                    <h2>$30.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/portugues-na-escola.webp"></a>
+                    <h1>Portugues Na Escola 2 </h1>
+                    <h2>$10.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/the-catcher-in-the-rye.webp"></a>
+                    <h1>The Catcher In The Rye</h1>
+                    <h2>$10.000</h2>
+                </div>
+            </div>
+
+            <div class="fila c">
+                <div class="item">
+                    <a href="#"><img src="img/productos/vince.jpg"></a>
+                    <h1>Language Practice for Advanced</h1>
+                    <h2>$40.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/insight.webp"></a>
+                    <h1>Insight Intermediate</h1>
+                    <h2>$30.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/portugues-na-escola.webp"></a>
+                    <h1>Portugues Na Escola 2 </h1>
+                    <h2>$10.000</h2>
+                </div>
+                <div class="item">
+                    <a href="#"><img src="img/productos/the-catcher-in-the-rye.webp"></a>
+                    <h1>The Catcher In The Rye</h1>
+                    <h2>$10.000</h2>
+                </div>
+            </div>
+        </div>
+        <div class="spinner"></div>
     </main>
 
-    <footer>
+    <footer class="footer-comprar">
         <div class="creditos">
             <p>Copyright &copy; 2024 EduMart. All rights reserved.</p>
         </div>
@@ -60,6 +162,7 @@
             <div class="container text-center">
                 <div class="row" id="footer">
                     <div class="col">
+                        <img src="img/logo.png" alt="" width="40%">
                         <h1>EduMart&reg;</h1>
                         <p>Make room for the new</p>
                     </div>
@@ -102,6 +205,10 @@
             </div>
         </div>
     </footer>
+    <script src="infScroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
