@@ -632,7 +632,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    animation: opacity 4.5s ease-in;
+    animation: opacity 4s ease-in;
 }
 
 .success svg {
