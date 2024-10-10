@@ -25,9 +25,9 @@ post.addEventListener('click', (event) => {
 
     setTimeout(() => {
         success.style.display = 'none'
-    }, 4501);
+    }, 4001);
 
     setTimeout(() => {
         location.href = './index.html'
-    }, 4501);
+    }, 4001);
 })
