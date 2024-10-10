@@ -475,20 +475,6 @@ footer {
     height: 40px;
 }
 
-.vender,
-.comprar,
-.carrito {
-    padding-top: 78px;
-    height: 100vh;
-}
-
-.vender h1,
-.comprar h1,
-.carrito h1 {
-    font-size: 120px;
-    text-align: center;
-}
-
 .useful-links li:hover {
     text-decoration: underline !important;
 }
@@ -587,5 +573,92 @@ footer {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Vender Page */
+.vender {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.vender form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 70vw;
+    padding: 4%;
+    margin-top: 5%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    gap: .5rem;
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 5px;
+    max-width: fit-content;
+    white-space: nowrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.success {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    background-color: #33c254;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: opacity 4.5s ease-in;
+}
+
+.success svg {
+    width: 30px;
+}
+
+.success p {
+    color: white !important;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 100;
+    }
+
+    95% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

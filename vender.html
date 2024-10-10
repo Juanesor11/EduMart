@@ -49,8 +49,57 @@
         </div>
     </header>
 
-    <main class="vender">
-        <h1>OPTION NOT AVAILABLE YET</h1>
+    <main>
+        <div class="vender">
+            <form class="postItem" method="get" enctype="multipart/form-data">
+                <div class="form-floating">
+                    <input type="file" accept="image/png, image/jpeg" class="form-control" id="floatingInputGroup2"
+                        placeholder="Upload a picture of the Product" required>
+                    <label for="floatingInputGroup2">Upload a picture of the Product</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGroup2" placeholder="Name of the Product"
+                        required>
+                    <label for="floatingInputGroup2">Name of the Product</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGroup2"
+                        placeholder="Brief Description of the Product" required>
+                    <label for="floatingInputGroup2">Brief Description of the Product</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="floatingInputGroup2" placeholder="Product's Price"
+                        required>
+                    <label for="floatingInputGroup2">Product's Price</label>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">
+                        Select Categories
+                    </button>
+                    <div class="dropdown-content">
+                        <label><input type="checkbox"> 1st year</label>
+                        <label><input type="checkbox"> 2nd year</label>
+                        <label><input type="checkbox"> 3rd year</label>
+                        <label><input type="checkbox"> 4th year</label>
+                        <label><input type="checkbox"> 5th year</label>
+                        <label><input type="checkbox"> Booklets</label>
+                        <label><input type="checkbox"> Uniforms</label>
+                        <label><input type="checkbox"> Tutorships</label>
+                        <label><input type="checkbox"> Notes</label>
+                    </div>
+                </div>
+
+                <button class="btn vender-post-btn">POST</button>
+            </form>
+            <div class="success">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="white"
+                        d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
+                </svg>
+                <p>Product published successfully!</p>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -104,6 +153,7 @@
             </div>
         </div>
     </footer>
+    <script src="dropdown.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
 
     const { scrollHeight, clientHeight, scrollTop } = document.documentElement
 
-    if (scrollTop + clientHeight > scrollHeight - 3 && !isLoading) {
+    if (scrollTop + clientHeight > scrollHeight - 4 && !isLoading) {
         isLoading = true;
         setTimeout(() => {
             nuevocontenedor();
