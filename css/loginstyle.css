@@ -38,18 +38,24 @@
 .signUpBox input {
     border-bottom: solid .1px;
     border-radius: 3px;
-    margin-left: 10px;
-    background-color: #f1f1f1;
+    background-color: #ffffffab;
+    max-width: 70%;
 }
 
 .logInInput {
     margin: 20px -5px;
     text-align: center;
+    transform: translateX(15%);
 }
 
 .logInInput label {
     font-size: 1.1rem;
 }
+
+.logInInput svg {
+    margin-right: 15px;
+}
+
 
 .remember-forgot {
     color: black !important;
@@ -64,6 +70,12 @@
 
 .remember-forgot p a:hover {
     text-decoration: underline !important;
+}
+
+.remember-forgot span {
+    font-weight: 600;
+    text-decoration: underline !important;
+    cursor: pointer;
 }
 
 .loginBtn,
