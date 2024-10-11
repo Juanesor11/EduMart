@@ -486,6 +486,10 @@ footer {
 }
 
 /* buy page  */
+.comprar {
+    margin-top: 118px;
+}
+
 .search-bar {
     margin-top: 3%;
 }
@@ -632,7 +636,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    animation: opacity 4s ease-in;
+    animation: opacity 4.5s ease-in;
 }
 
 .success svg {
@@ -661,4 +665,45 @@ input::-webkit-inner-spin-button {
     100% {
         opacity: 0;
     }
+}
+
+/* Cart Page */
+.cart h1 {
+    margin-top: 118px;
+    margin-left: 2%;
+}
+
+.cart-circle {
+
+    border: 3px solid #0F456B;
+    border-radius: 100px;
+    max-width: fit-content;
+    padding: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-circle svg {
+    width: 5vw;
+}
+
+.cart h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-weight: 600;
+}
+
+.cart h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.cart a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    max-width: fit-content;
 }
