@@ -20,4 +20,7 @@ btn.addEventListener('click', () => {
     contenedor.style.display = 'none'
     form.style.display = 'none'
     post.style.display = 'block'
+        setTimeout(() => {
+        wrapper.style.display = 'none'
+    }, 4000);
 })
